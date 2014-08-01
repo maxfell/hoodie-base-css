@@ -1,0 +1,30 @@
+{
+  "name": "hoodie-base-css",
+  "version": "0.0.1",
+  "description": "A core CSS Framework for Hoodie projects based on Bootstrap.",
+  "main": "hoodie.scss",
+  "scripts": {
+    "dist": "grunt dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxfell/hoodie-base-css"
+  },
+  "keywords": [
+    "hoodie",
+    "bootstrap"
+  ],
+  "author": "Max Fellmuth",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/maxfell/hoodie-base-css/issues"
+  },
+  "homepage": "https://github.com/maxfell/hoodie-base-css",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-sass": "^0.14.0",
+    "grunt-text-replace": "^0.3.12"
+  }
+}

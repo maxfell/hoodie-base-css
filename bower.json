@@ -1,0 +1,30 @@
+{
+  "name": "hoodie-base-css",
+  "version": "0.0.1",
+  "authors": [
+    "Max Fellmuth <max@maxfellmuth.com>"
+  ],
+  "description": "A core CSS Framework for Hoodie projects based on Bootstrap.",
+  "main": "hoodie.scss",
+  "keywords": [
+    "hoodie",
+    "css",
+    "bootstrap",
+    "style"
+  ],
+  "license": "Apache 2.0",
+  "homepage": "http://hood.ie/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "hoodie-dev.scss",
+    "hoodie-dev.css"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0+1"
+  }
+}
