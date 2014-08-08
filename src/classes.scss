@@ -1,0 +1,295 @@
+//
+// General Styling
+// --------------------------------------------------
+
+//==Styling
+//
+//## Default Hoodie look
+
+body{
+    font-family: $font-family-sans-serif;
+    font-size: $hoodie-font-size;
+    color: $hoodie-nearblack;
+}
+
+h1{
+    margin-top: 16px;
+}
+
+a{
+    text-decoration: underline;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+
+  small,
+  .small {
+    font-size: 55%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+
+pre, samp, code{
+    font-size: 3*($hoodie-font-size/4);
+}
+
+.container-fluid .container{
+    padding-left: 0;
+}
+
+.container{
+    margin-left: 20%;
+    aside {
+        float: left;
+        width: 20%;
+        margin-left: -25%;
+        font-size: 3*($hoodie-font-size/4);
+        line-height: 1.8;
+        color: $hoodie-lightgrey;
+    }
+    footer{
+        font-size: 3*($hoodie-font-size/4);
+        color: $hoodie-lightgrey;
+        text-transform: upcase;
+    }
+
+}
+
+.btn{
+    font-size: 3*($hoodie-font-size/4);
+}
+
+//==Navigation
+//
+//## The custom Hoodie Navigation
+
+nav.main-navigation{
+
+    $hoodie-nav-height: 60px;
+
+    @include container-fixed();
+
+    line-height: $hoodie-nav-height;
+    height: $hoodie-nav-height;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    background: $hoodie-white;
+
+    ul{
+        @extend .list-inline;
+
+        font-size: 3*($hoodie-font-size/4);
+
+        &.left{
+            float: left;
+        }
+
+        &.right{
+            float: right;
+        }
+
+        li{
+            //background: red;
+            padding: 0 25px;
+
+            // BUG: For some reason there is a padding between the li elements
+            margin: 0 -2px;
+
+            letter-spacing: 2px;
+            font-weight: 500;
+
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $hoodie-white;
+            }
+
+            &.logo{
+                color: white;
+            }
+
+            &.blue{
+                background: $hoodie-blue;
+                a{
+                    color: $hoodie-white;
+                }
+            }
+
+            &.green{
+                background: $hoodie-green;
+                a{
+                    color: $hoodie-white;
+                }
+            }
+        }
+    }
+
+    &.orange{
+        color: $hoodie-orange;
+        a{
+            color: $hoodie-orange;
+        }
+        .logo{
+            background: $hoodie-orange;
+        }
+
+    }
+    &.blue{
+        color: $hoodie-blue;
+        a{
+            color: $hoodie-blue;
+        }
+        .logo{
+            background: $hoodie-blue;
+        }
+    }
+}
+
+//==Code Highlighting
+//
+//## Styling for the Prism code highlighter
+
+pre{
+    border-color: lighten($hoodie-lightgrey, 25%);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: lighten($hoodie-nearblack, 7%);
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    word-spacing: normal;
+
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    overflow: scroll;
+}
+
+pre[class*="language-"] code {
+    display: block;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: transparent;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: $hoodie-lightgrey;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+    color: $hoodie-red;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+    color: $hoodie-green;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: $hoodie-brown;
+    background: hsla(0,0%,100%,.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: $hoodie-blue;
+}
+
+
+.token.regex,
+.token.important {
+    color: $hoodie-yellow;
+}
+
+.token.important {
+    font-weight: bold;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+//==Mobile Styling
+//
+
+@media screen and (max-width: 700px) {
+
+    .container{
+        margin-left: 0;
+        aside {
+            float: none;
+            width: auto;
+            margin: 0 0 20px 0;
+            line-height: 1.5;
+        }
+    }
+
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6 {
+
+      small,
+      .small {
+        display: block;
+        padding: 0.5em 0;
+      }
+    }
+}
