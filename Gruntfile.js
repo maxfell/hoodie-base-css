@@ -2,12 +2,16 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    //pkg: grunt.file.readJSON('package.json'),
+    config: {
+      src: 'src',
+      dist: 'dist'
+    },
+
     clean: [
-      'hoodie.css',
-      'hoodie.scss',
-      'hoodie-dev.css',
-      'hoodie-dev.scss',
+      '<%= config.dist %>/hoodie.css',
+      '<%= config.dist %>/hoodie.scss',
+      '<%= config.dist %>/hoodie-dev.css',
+      '<%= config.dist %>/hoodie-dev.scss',
       'bower_components/hoodie-base-css'
     ],
 
@@ -25,7 +29,7 @@ module.exports = function(grunt) {
     sass: { // task
       dev: { // target
         files: [{ // dictionary of files
-          dest: 'hoodie-dev.css',
+          dest: '<%= config.dist %>/hoodie-dev.css',
           src: 'bower_components/hoodie-base-css/hoodie.scss'
         }]
       },
@@ -45,22 +49,22 @@ module.exports = function(grunt) {
       dev: {
         files: [{
           src: 'bower_components/hoodie-base-css/hoodie.scss',
-          dest: 'hoodie-dev.scss'
+          dest: '<%= config.dist %>/hoodie-dev.scss'
         }, {
           src: 'bower_components/hoodie-base-css/hoodie-dev.css',
-          dest: 'hoodie-dev.css'
+          dest: '<%= config.dist %>/hoodie-dev.css'
         }]
       },
       dist: {
         files: [{
           src: 'bower_components/hoodie-base-css/hoodie.scss',
-          dest: 'hoodie.scss'
+          dest: '<%= config.dist %>/hoodie.scss'
         }, {
           src: 'bower_components/hoodie-base-css/hoodie.css',
-          dest: 'hoodie.css'
+          dest: '<%= config.dist %>/hoodie.css'
         }, {
           src: 'bower_components/hoodie-base-css/hoodie.css.map',
-          dest: 'hoodie.css.map'
+          dest: '<%= config.dist %>/hoodie.css.map'
         }]
       }
     }
