@@ -1,4 +1,6 @@
 # Hoodie Base CSS
+[![Build Status](https://travis-ci.org/maxfell/hoodie-base-css.svg)](https://travis-ci.org/maxfell/hoodie-base-css)
+
  > Hoodie's base CSS file
 
  ## Installation
