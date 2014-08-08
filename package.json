@@ -1,6 +1,6 @@
 {
   "name": "hoodie-base-css",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A core CSS Framework for Hoodie projects based on Bootstrap.",
   "main": "hoodie.scss",
   "scripts": {
