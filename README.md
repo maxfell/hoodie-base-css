@@ -15,7 +15,6 @@
 
  ```
  npm install
- bower install
  ```
 
  Edit src/hoodie.scss, then run `grunt dist` to create the scss an css files.
