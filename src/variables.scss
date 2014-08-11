@@ -1,0 +1,71 @@
+//
+// Variables
+// --------------------------------------------------
+
+$fonts-dir: "../assets/fonts/" !default;
+$hoodie-font-size: 16pt;
+
+//== Colors
+//
+//## These are the official Hoodie colors
+
+// Hoodie colors
+
+$hoodie-blue:     #312783;
+$hoodie-green:    #0B8E36;
+$hoodie-yellow:   #F9B233;
+$hoodie-orange:   #E94E1B;
+$hoodie-brown:    #693C10;
+$hoodie-red:      #BE1522;
+
+// Hoodie pale colors
+
+$hoodie-paleblue:       #DCE7EA;
+$hoodie-palegreen:      #BFD4B4;
+$hoodie-paleyellow:     #FAF1B0;
+$hoodie-paleorange:     #F9D4A2;
+$hoodie-palebrown:      #C5B09A;
+$hoodie-palered:        #ECAC8B;
+
+// Monochromatic colors (from light to dark)
+
+$hoodie-white:          #FFFFFF;
+$hoodie-lightbeige:     #F8F5F3;
+$hoodie-lightgrey:      #807E7B;
+$hoodie-darkgrey:       #414040;
+$hoodie-mediumbrown:    #373435;
+$hoodie-nearblack:      #282726;
+
+//
+// Bootstrap
+// --------------------------------------------------
+
+//==Bootstrap Variables
+//
+//## Rewires some bootstrap variables
+
+$gray-darker:            $hoodie-nearblack;
+$gray-dark:              $hoodie-darkgrey;
+$gray:                   $hoodie-mediumbrown;
+$gray-light:             $hoodie-lightgrey;
+$gray-lighter:           $hoodie-lightbeige;
+
+$brand-primary:         $hoodie-blue;
+$brand-success:         $hoodie-green;
+$brand-info:            $hoodie-orange;
+$brand-warning:         $hoodie-yellow;
+$brand-danger:          $hoodie-red;
+
+$text-color:            $hoodie-nearblack;
+
+$code-color:            $hoodie-blue;
+$code-bg:               $hoodie-paleblue;
+
+$font-family-sans-serif:  Bariol, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: $hoodie-font-size;
+
+$grid-gutter-width:         30px !default;
+
+$container-tablet:             ((720px + $grid-gutter-width)) !default;
+$container-desktop:            ((720px + $grid-gutter-width)) !default;
+$container-large-desktop:      ((720px + $grid-gutter-width)) !default;

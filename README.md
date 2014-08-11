@@ -1,4 +1,6 @@
 # Hoodie Base CSS
+[![Build Status](https://travis-ci.org/maxfell/hoodie-base-css.svg)](https://travis-ci.org/maxfell/hoodie-base-css)
+
  > Hoodie's base CSS file
 
  ## Installation
@@ -15,7 +17,6 @@
 
  ```
  npm install
- bower install
  ```
 
  Edit src/hoodie.scss, then run `grunt dist` to create the scss an css files.

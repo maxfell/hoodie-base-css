@@ -1,6 +1,6 @@
 {
   "name": "hoodie-base-css",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A core CSS Framework for Hoodie projects based on Bootstrap.",
   "main": "hoodie.scss",
   "scripts": {
@@ -20,11 +20,15 @@
     "url": "https://github.com/maxfell/hoodie-base-css/issues"
   },
   "homepage": "https://github.com/maxfell/hoodie-base-css",
-  "dependencies": {
+  "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.5.0",
+    "grunt-release-hoodie": "^2.6.0",
     "grunt-sass": "^0.14.0",
-    "grunt-text-replace": "^0.3.12"
+    "load-grunt-tasks": "^0.6.0"
+  },
+  "scipts": {
+    "postinstall": "bower install",
+    "test": "grunt dist"
   }
 }
